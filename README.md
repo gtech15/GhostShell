@@ -10,6 +10,10 @@ A command-line AI chat client built in Python, using OpenRouter for model access
 
 Ghost Shell is a terminal-based chatbot with a styled interface — formatted response panels, markdown rendering, command history, and loading indicators — built as an alternative to plain `print()`/`input()` chat scripts. It connects to any chat model available through OpenRouter's API.
 
+## Disclaimer 
+This bot is intended strictly for educational purposes and authorized security assessments.I bear no responsibility for any misuse, damage, or illegal activities caused by this program. By using this bot , you agree to comply with all applicable local, national, and international laws.
+
+
 ## Features
 
 - Formatted response panels with markdown and code rendering

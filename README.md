@@ -32,6 +32,8 @@ This bot is intended strictly for educational purposes and authorized security a
 ```bash
 git clone https://github.com/yourusername/ghost-shell.git
 cd ghost-shell
+python3 -m venv venv
+source venv/bin/activate 
 pip install -r requirements.txt
 ```
 

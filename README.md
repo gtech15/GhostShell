@@ -30,7 +30,7 @@ This bot is intended strictly for educational purposes and authorized security a
 ## Installation
 
 ```bash
-git clone https://github.com/gtech15/ghost-shell.git
+git clone https://github.com/gtech15/GhostShell.git
 cd ghost-shell
 python3 -m venv venv
 source venv/bin/activate 

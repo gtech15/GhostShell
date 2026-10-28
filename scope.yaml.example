@@ -1,0 +1,9 @@
+# Copy this to scope.yaml in your workspace to enable scope warnings.
+# When scope.yaml is present, run_shell and http_request will warn (not
+# block) if a command/URL mentions a target that isn't listed here.
+# localhost/127.0.0.1 are always considered in scope.
+
+authorized_targets:
+  - 127.0.0.1
+  - 192.168.1.0/24
+  # - example-authorized-target.com

@@ -1,0 +1,61 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ghostshell"
+version = "0.4.1"
+description = "NVIDIA NIM powered agent CLI for authorized pentesting and software development work."
+readme = "README.md"
+license = { file = "LICENSE" }
+authors = [{ name = "Goodluck Timothy" }]
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+    "Topic :: Security",
+    "Topic :: Software Development :: Build Tools",
+    "Intended Audience :: Developers",
+]
+dependencies = [
+    "openai>=1.40.0",
+    "prompt_toolkit>=3.0.43",
+    "rich>=13.7.0",
+    "python-dotenv>=1.0.1",
+    "questionary>=2.0.0",
+    "PyYAML>=6.0",
+    "requests>=2.31.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0.0",
+    "ruff>=0.5.0",
+]
+web = [
+    "fastapi>=0.110.0",
+    "uvicorn[standard]>=0.29.0",
+    "anyio>=4.0.0",
+]
+
+[project.scripts]
+ghostshell = "ghostshell.cli:main"
+ghostshell-web = "ghostshell.web.server:main"
+
+[project.urls]
+Homepage = "https://github.com/your-username/GhostShell"
+Issues = "https://github.com/your-username/GhostShell/issues"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+ghostshell = ["system_prompt.txt", "assets/*"]
+"ghostshell.web" = ["static/*"]
+
+[tool.ruff]
+line-length = 110
+target-version = "py39"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

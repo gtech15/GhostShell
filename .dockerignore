@@ -1,0 +1,13 @@
+venv/
+.venv/
+.git/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+.chat_history
+.ghostshell.log
+.ghostshell/
+tests/
+.github/
+*.egg-info/

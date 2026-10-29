@@ -1,6 +1,6 @@
 # GhostShell
 
-[![CI](https://github.com/your-username/GhostShell/actions/workflows/ci.yml/badge.svg)](https://github.com/your-username/GhostShell/actions)
+[![CI](https://github.com/gtech15/GhostShell/actions/workflows/ci.yml/badge.svg)](https://github.com/gtech15/GhostShell/actions)
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
 An AI agent for **authorized** penetration testing and software
@@ -26,7 +26,7 @@ GhostShell can:
 ## Quick start
 
 ```bash
-git clone https://github.com/your-username/GhostShell.git
+git clone https://github.com/gtech15/GhostShell.git
 cd GhostShell
 python -m venv venv
 source venv/bin/activate
